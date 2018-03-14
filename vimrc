@@ -1122,3 +1122,9 @@ nmap <C-]> g<C-]>
 " ======================================================================================== 
 " rainbow levels toggle
 nmap <leader>rlt :RainbowLevelsToggle<cr>
+
+" ======================================================================================== 
+" Set the cursor to to a '|' when in insert mode
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[2 q"
+
