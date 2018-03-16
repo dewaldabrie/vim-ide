@@ -170,6 +170,8 @@ nnoremap <leader>ev <C-w><C-v><C-l>:e $MYVIMRC<cr>
 " Working with split screen nicely
 " Resize Split When the window is resized"
 au VimResized * :wincmd =
+" Split vertically to the bottom
+set splitbelow
 
 "==========================================================================="
 " Wildmenu completion "
@@ -1011,7 +1013,7 @@ let g:ctrlp_working_path_mode = 'ra'
 nmap <leader><leader>l :CtrlPLocate<cr>
 " " ========================================================================================
 " visualmarks configuration
-vmap <unique> m <Plug>VisualMarksVisualMark
+" vmap <unique> m <Plug>VisualMarksVisualMark
 nmap <leader>< <Plug>VisualMarksGetVisualMark
 
 
