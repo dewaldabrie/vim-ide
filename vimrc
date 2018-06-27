@@ -16,10 +16,11 @@ set modelines=0
 
 " ========================================================================================
 "TAB settings.
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=0
 set expandtab
+set smarttab
 set showtabline=2
 set ruler
 
@@ -106,7 +107,7 @@ nnoremap <leader>tj :tjump<cr>
 " ========================================================================================
 " Make Vim to handle long lines nicely.
 set wrap
-set textwidth=79
+set textwidth=85
 set colorcolumn=+1
 set formatoptions=qrn1
 "set colorcolumn=79
@@ -1129,4 +1130,9 @@ nmap <leader>rlt :RainbowLevelsToggle<cr>
 " Set the cursor to to a '|' when in insert mode
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
+
+
+" ======================================================================================== 
+" Insert breakpoint for Python 
+nnoremap <leader>p Oimport pdb; pdb.set_trace()<Esc>
 
