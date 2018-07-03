@@ -81,3 +81,12 @@
 [submodule "bundle/rainbow_levels.vim"]
 	path = bundle/rainbow_levels.vim
 	url = https://github.com/thiagoalessio/rainbow_levels.vim
+[submodule "bundle/ale"]
+	path = bundle/ale
+	url = https://github.com/w0rp/ale
+[submodule "bundle/jedi-vim"]
+	path = bundle/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim
+[submodule "bundle/vim-tmux-navigator"]
+	path = bundle/vim-tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator
