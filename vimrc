@@ -5,7 +5,7 @@
 filetype off
 call pathogen#runtime_append_all_bundles()
 execute pathogen#infect()
-filetype plugin indent on
+f, None.iletype plugin indent on
 syntax on
 
 
@@ -420,8 +420,8 @@ noremap <buffer> <silent> K :exe "Man" expand('<cword>') <CR>
 "==========================================================================="
 " Map SyntasticCheck to F4 
 "
-noremap <silent> <F4> :SyntasticCheck<CR>
-noremap! <silent> <F4> <ESC>:SyntasticCheck<CR>
+"noremap <silent> <F4> :SyntasticCheck<CR>
+"noremap! <silent> <F4> <ESC>:SyntasticCheck<CR>
 
 "==========================================================================="
 au BufNewFile,BufRead *.c,*.cc,*.cpp,*.h call SetupCandCPPenviron()
@@ -643,7 +643,7 @@ autocmd VimLeave * SessionSaveAs vim_auto_saved_session
 "============ Configuration Omni Completion =============================="
 
 filetype plugin on
-autocmd FileType python set omnifunc=pythoncomplete#Complete
+"autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
@@ -886,10 +886,6 @@ let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 
 " Trigger a highlight only when pressing f and F.
 let g:qs_highlight_on_keys = ['f', 'F']
-
-let g:qs_first_occurrence_highlight_color = 155       " terminal vim
-
-let g:qs_second_occurrence_highlight_color = 81         " terminal vim
 
 " =======================================================================================
 " yankring
