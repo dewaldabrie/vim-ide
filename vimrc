@@ -5,7 +5,7 @@
 filetype off
 call pathogen#runtime_append_all_bundles()
 execute pathogen#infect()
-f, None.iletype plugin indent on
+filetype plugin indent on
 syntax on
 
 
@@ -1132,3 +1132,6 @@ let &t_EI = "\e[2 q"
 " Insert breakpoint for Python 
 nnoremap <leader>p Oimport pdb; pdb.set_trace()<Esc>
 
+" ======================================================================================== 
+" Help out the lazy shift finger when saving 
+command! W write
